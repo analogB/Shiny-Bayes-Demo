@@ -1,0 +1,6 @@
+model {
+  for (i in 1:nTotal) {
+    y[i] ~ dbern(theta)
+  }
+  theta ~ dbeta(1,1)
+}
